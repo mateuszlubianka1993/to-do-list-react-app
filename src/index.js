@@ -27,11 +27,21 @@ class App extends React.Component {
         console.log(this.state.tasks)
         console.log(this.state.thatTask)
       }
+
+      deleteAllTasks = () => {
+        this.setState({
+          tasks: [] 
+        })
+      };
       
     render() {
         return (
             <div className="main-box">
-                <ToDoForm onChange={this.onChange} addNewTask={this.addNewTask}/>
+                <ToDoForm 
+                  onChange={this.onChange} 
+                  addNewTask={this.addNewTask}
+                  deleteAllTasks={this.deleteAllTasks}
+                />
                 <List tasks={this.state.tasks}/>
             </div>
         );
