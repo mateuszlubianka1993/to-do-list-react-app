@@ -21,12 +21,12 @@ class App extends React.Component {
 
       addNewTask = (e) => {
         e.preventDefault();
-        this.setState({
-          thatTask: '',
-          tasks: [...this.state.tasks, this.state.thatTask]
-        });
-        console.log(this.state.tasks)
-        console.log(this.state.thatTask)
+        if(this.state.thatTask !== '') {
+          this.setState({
+            thatTask: '',
+            tasks: [...this.state.tasks, this.state.thatTask]
+          });
+        }
       }
 
       deleteAllTasks = () => {
@@ -37,7 +37,6 @@ class App extends React.Component {
 
       removeLastTask = () => {
         const copy = this.state.tasks;
-        console.log(this.state.tasks.length);
         copy.pop();
 
         this.setState({tasks: copy});
@@ -55,7 +54,7 @@ class App extends React.Component {
                   deleteAllTasks={this.deleteAllTasks}
                   removeLastTask={this.removeLastTask}
                 />
-                <List tasks={this.state.tasks}/>
+                <List tasks={this.state.tasks} />
             </div>
         );
     };
