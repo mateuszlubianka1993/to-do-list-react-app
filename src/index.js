@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ToDoForm from './ToDoForm';
 import List from './List';
+import './index.css';
 
 class App extends React.Component {
 
@@ -45,6 +46,9 @@ class App extends React.Component {
     render() {
         return (
             <div className="main-box">
+                <header className="main-header">
+                  <h1>To Do List App</h1>
+                </header>
                 <ToDoForm 
                   onChange={this.onChange} 
                   addNewTask={this.addNewTask}
