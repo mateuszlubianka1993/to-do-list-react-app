@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ToDoForm from './ToDoForm';
 
 class App extends React.Component {
 
@@ -12,7 +13,7 @@ class App extends React.Component {
     render() {
         return (
             <div className="main-box">
-                Hello!
+                <ToDoForm />
             </div>
         );
     };
