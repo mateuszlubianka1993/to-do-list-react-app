@@ -32,7 +32,7 @@ class App extends React.Component {
         return (
             <div className="main-box">
                 <ToDoForm onChange={this.onChange} addNewTask={this.addNewTask}/>
-                <List />
+                <List tasks={this.state.tasks}/>
             </div>
         );
     };
