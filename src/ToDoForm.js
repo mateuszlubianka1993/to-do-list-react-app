@@ -7,7 +7,7 @@ class ToDoForm extends React.Component {
 
         const clear = () => {
             document.querySelector('input').value='';
-        }
+        };
         
         return (
             <div className="to-do-form-div">

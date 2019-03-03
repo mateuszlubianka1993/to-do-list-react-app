@@ -11,7 +11,7 @@ class App extends React.Component {
         this.state = {
             tasks: [],
             thatTask: ''
-          }
+          };
       };
 
       onChange = (e) => {
@@ -28,13 +28,13 @@ class App extends React.Component {
             tasks: [...this.state.tasks, this.state.thatTask]
           });
           
-        }
-      }
+        };
+      };
 
       deleteAllTasks = () => {
         this.setState({
           tasks: [] 
-        })
+        });
       };
 
       removeLastTask = () => {
@@ -60,6 +60,6 @@ class App extends React.Component {
             </div>
         );
     };
-}
+};
 
 ReactDOM.render(<App />, document.querySelector('#root'));
