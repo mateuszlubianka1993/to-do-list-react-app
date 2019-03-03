@@ -11,7 +11,7 @@ class ToDoForm extends React.Component {
                 </form>
                 <div className="buttons">
                     <button onClick={this.props.deleteAllTasks}>Delete All</button>
-                    <button>Remove Last</button>
+                    <button onClick={this.props.removeLastTask}>Remove Last</button>
                 </div>
             </div>
         );

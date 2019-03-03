@@ -33,6 +33,14 @@ class App extends React.Component {
           tasks: [] 
         })
       };
+
+      removeLastTask = () => {
+        const copy = this.state.tasks;
+        console.log(this.state.tasks.length);
+        copy.pop();
+
+        this.setState({tasks: copy});
+      };
       
     render() {
         return (
@@ -41,6 +49,7 @@ class App extends React.Component {
                   onChange={this.onChange} 
                   addNewTask={this.addNewTask}
                   deleteAllTasks={this.deleteAllTasks}
+                  removeLastTask={this.removeLastTask}
                 />
                 <List tasks={this.state.tasks}/>
             </div>
