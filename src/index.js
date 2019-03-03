@@ -13,10 +13,11 @@ class App extends React.Component {
             thatTask: ''
           }
       };
-      
+
       onChange = (e) => {
         this.setState({thatTask: e.target.value});
         console.log(e.target.value)
+        
       };
 
       addNewTask = (e) => {
@@ -26,6 +27,7 @@ class App extends React.Component {
             thatTask: '',
             tasks: [...this.state.tasks, this.state.thatTask]
           });
+          
         }
       }
 
