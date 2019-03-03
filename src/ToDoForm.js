@@ -5,8 +5,8 @@ class ToDoForm extends React.Component {
     render() {
         return (
             <div className="to-do-form-div">
-                <form>
-                    <input type="text" placeholder="Add new task" ></input>
+                <form onSubmit={this.props.addNewTask}>
+                    <input type="text" placeholder="Add new task" onChange={this.props.onChange}></input>
                     <button>Add</button>
                 </form>
                 <div className="buttons">
