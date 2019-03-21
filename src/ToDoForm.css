@@ -1,6 +1,6 @@
 .to-do-form-div {
     background-color: #e1c478;
-    width: 55%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
@@ -56,3 +56,67 @@ input {
 .buttons button:hover {
     background-color: #a00605;
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .to-do-form-div {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .to-do-form-div {
+        width: 85%;
+    }
+} 
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .to-do-form-div {
+        width: 90%;
+    }
+} 
+
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+    .to-do-form-div {
+        width: 90%;
+    }
+
+    input {
+        width: 65%;
+        font-size: 110%;
+        padding: 5px;
+    }
+    
+    .add-button {
+        width: 25%;
+        margin-left: 10px;
+    }
+
+    .buttons button {
+        flex-basis: 40%;
+    }
+} 
+
+@media only screen and (max-width: 480px) {
+    .to-do-form-div {
+        width: 90%;
+    }
+
+    input {
+        width: 65%;
+        font-size: 90%;
+        padding: 5px;
+    }
+    
+    .add-button {
+        width: 25%;
+        margin-left: 10px;
+    }
+
+    .buttons button {
+        flex-basis: 45%;
+    }
+
+    .to-do-form-div button {
+        font-size: 90%;
+    }
+} 

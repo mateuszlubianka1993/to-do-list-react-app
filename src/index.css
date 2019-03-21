@@ -4,7 +4,7 @@ body {
 
 .main-box {
     background-color: #5e4020;
-    width: 75%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -14,10 +14,52 @@ body {
 .main-header {
     padding: 25px 15px;
     background-color: #5c6a4b;
-    width: 55%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 25px;
     font-size: 22px;
     color: #e1c478;
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .main-header {
+        width: 80%;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .main-header {
+        width: 85%;
+        font-size: 25px;
+    }
+} 
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .main-header {
+        width: 90%;
+        font-size: 25px;
+    }
+} 
+
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+    .main-header {
+        width: 90%;
+        font-size: 22px;
+        padding: 15px 15px;
+    }
+} 
+
+@media only screen and (max-width: 480px) {
+    .main-box {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .main-header {
+        width: 90%;
+        font-size: 18px;
+        padding: 10px 10px;
+    }
+} 

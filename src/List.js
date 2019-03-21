@@ -11,7 +11,7 @@ render() {
     return (
         <ul className="list-ul">
             {this.props.tasks.map((task, index) => <li key={index}>
-                                                Task number
+                                                Task 
                                                 <span className="task-number"> 
                                                 {index+1}</span> 
                                                 {task}
