@@ -28,3 +28,21 @@
     line-height: 25px;
     text-align: center;
 }
+
+.r-button {
+    float: right;
+    font-size: 20px;
+    padding: 3px;
+    border: 2px solid #c21807;
+    border-radius: 5px;
+    background-color: #c21807;
+    color: #e1c478;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.r-button:hover {
+    background-color: #a00605;
+    color: #d0b367;
+    transform: scale(1.1);
+}
