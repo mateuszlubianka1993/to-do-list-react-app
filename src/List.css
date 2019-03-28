@@ -7,6 +7,7 @@
     padding: 15px;
     font-size: 20px;
     color: #5c6a4b;
+    position: relative;
 }
 
 .list-ul li {
@@ -14,7 +15,30 @@
     margin: 5px;
     padding: 5px;
     text-align: start;
+    position: relative;
 }
+
+.fade-enter {
+    opacity: 0.1;
+    right: 150px;
+  }
+  
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    right: 0;
+    transition: all 0.5s ease-in;
+  }
+  
+  .fade-leave {
+    opacity: 1;
+    right: 0;
+  }
+  
+  .fade-leave.fade-leave-active {
+    opacity: 0;
+    right: -150px;
+    transition: all 0.3s ease-in;
+  }
 
 .task-number {
     color: #e1c478;
@@ -106,3 +130,5 @@
         line-height: 12px;
     } 
 } 
+
+
