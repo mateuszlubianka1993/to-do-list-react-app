@@ -11,9 +11,13 @@
 I made this app to learn basic skills in React. 
 This is simple ToDo App. You can add new tasks, delete all tasks, delete last task or choose one task and remove it by clicking a button.
 
+<<<<<<< HEAD
 ## Screenshots
 ![screenshot - for laptop](./img/to-do-list-react-app.herokuapp.com_(1024).png)
 ![screenshot - for tablet](./img/to-do-list-react-app.herokuapp.com_(768).png)
+=======
+## Screenshot
+>>>>>>> 285503d3a5962218323471154474ca3ada8f8b39
 ![screenshot - for mobile](./img/to-do-list-react-app.herokuapp.com_(375).png)
 
 ## Contact
